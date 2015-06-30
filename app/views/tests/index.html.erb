@@ -4,8 +4,12 @@ here's some react!<br>
 a hello!
 <%= react_component('helloWorld') %>
 a first level
-<%#= react_component('usingProps') %>
+
 a broken next-level
-<%= react_component('CommentBox', data: 'data') %>
-<hr>
+<%= react_component('CommentBox', [
+      {:author => 'Coolman', :text => "I like it cool, man."},
+      {:author => 'Coolman', :text => "I like it cool, man."}
+                                  ]
+                    ) %>
 the end
+
