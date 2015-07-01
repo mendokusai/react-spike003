@@ -12,8 +12,3 @@ var CommentBox = React.createClass({
       );
   }
 });
-
-// React.render(
-//   <CommentBox data={data} />
-//   document.getElementById('content')
-// );

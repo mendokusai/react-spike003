@@ -6,10 +6,9 @@ a hello!
 a first level
 
 a broken next-level
-<%= react_component('CommentBox', [
-      {:author => 'Coolman', :text => "I like it cool, man."},
-      {:author => 'Coolman', :text => "I like it cool, man."}
-                                  ]
-                    ) %>
+<%= react_component('CommentBox', :data => [
+  {author: "Data McDatason", text: "This is one comment"},
+  {author: "Mike Roache", text: "This is *another* comment"}
+]) %>
 the end
 
